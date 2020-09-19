@@ -3,63 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-<link rel="icon" type="image/ico" sizes="16x16" href="src/favicon.ico">
-<meta name="theme-color" content="#24262d">
-<link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/ico" sizes="16x16" href="src/favicon.ico" />
+    <meta name="theme-color" content="#24262d" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>PortFolio | Tamzid Ahmed</title>
   </head>
   <body>
     <div class="container">
-    <div class="terminal-window">
-      <header>
-        <div class="container">
-        <div class="row">
-        <div class="button green"></div>
-        <div class="button yellow"></div>
-        <div class="button red"></div>
-        <div class="head-port"><p>tamzid_ahmed@portfolio<span class="social-media">
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <a class="text-decoration-none" href="https://github.com/tamzid958" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        
-        <a class="text-decoration-none" href="https://www.linkedin.com/in/tamzid-ahmed958/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        </span></p></div>        
+      <div class="terminal-window">
+        <header>
+          <div class="container">
+            <div class="row">
+              <div class="button green"></div>
+              <div class="button yellow"></div>
+              <div class="button red"></div>
+              <div class="head-port">
+                <p>
+                  tamzid_ahmed@portfolio<span class="social-media">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a
+                      class="text-decoration-none"
+                      href="https://github.com/tamzid958"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+
+                    <a
+                      class="text-decoration-none"
+                      href="https://www.linkedin.com/in/tamzid-ahmed958/"
+                      target="_blank"
+                    >
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="terminal div-dit">
+          <div class="history"></div>
+          <p>
+            find out who i am ! &nbsp;&nbsp;&nbsp;
+            <a href="file/CV_Tamzid_Ahmed.pdf" download>
+              <input
+                type="button"
+                class="cv_btn"
+                value="Download CV"
+                id="cv_btn"
+              /><br /><br />
+            </a>
+            command line (help): &nbsp; 1. personal_info &nbsp; 2. skills &nbsp;
+            3. projects &nbsp; 4. clear
+          </p>
+
+          <p clas="text-justify" class="" id="details"></p>
+          mrtvirus@tamzid-ahmed:~$&nbsp;<span class="prompt"
+            ><input type="text" id="cmd_prmpt" autofocus spellcheck="false"
+          /></span>
+
+          <span class="typed-cursor"></span>
+        </section>
       </div>
     </div>
-      </header>
-      <section class="terminal div-dit">
-        <div class="history"></div>
-        <p>find out who i am ! &nbsp;&nbsp;&nbsp;
-          <a href="file/CV_Tamzid_Ahmed.pdf" download>
-          <input type="button" class="cv_btn" value="Download CV" id="cv_btn"/><br><br>
-        </a>
-          command line (help): &nbsp;
-          1. personal_info &nbsp;
-          2. skills &nbsp;
-          3. projects &nbsp;
-          4. clear
-        </p>
-       
-          <p clas="text-justify" class="" id="details"></p>
-          mrtvirus@tamzid-ahmed:~$&nbsp;<span class="prompt"><input type="text" id="cmd_prmpt" autofocus spellcheck="false"></input></span>
-       
-        <span class="typed-cursor"></span>
-
-      </section>
-    </div>
-    </div>
-  </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/app.js?version = 1.1"></script>
   </body>
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"
-  ></script>
-  <script src="src/app.js"></script>
 </html>

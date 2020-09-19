@@ -2,6 +2,13 @@
   font-family: Consolas, monaco, monospace;
   font-size: medium;
 }
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
 .div-dit {
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
@@ -87,6 +94,9 @@ a {
   top: 30px;
   bottom: 0;
   overflow: auto;
+}
+canvas {
+  position: absolute;
 }
 input[type="text"] {
   background-color: transparent;

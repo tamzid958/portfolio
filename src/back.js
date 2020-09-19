@@ -21,7 +21,7 @@ var canvas = document.getElementById("cvs"),
   gravity = 1, // gravity multiplier
   windforce = 0, // yea i'd just leave this
   windmultiplier = 0.007, // this freaks out on large numbers
-  maxspeed = 5, // this is so you never run too fast (it is a multiplier not raw)
+  maxspeed = 1, // this is so you never run too fast (it is a multiplier not raw)
   gutter = 0.001; // the percentage distance to travel off screen before wrapping
 
 function Drop() {

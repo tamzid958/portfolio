@@ -11,17 +11,17 @@ $(document).ready(function () {
   $("#cv_btn").click(function () {
     document.getElementById("cv_btn").value = "Downloaded";
   });
-
   $("#cmd_prmpt").on("keypress", function (e) {
+    document.getElementById("details").classList.remove("details_anim");
     var cmd_prmpt = $("#cmd_prmpt").val();
     var error =
       "<br>" +
       cmd_prmpt +
-      " not found, try command: personal_info, skills, projects or clear";
+      " not found, try command: info, skills, projects or clear";
 
     if (e.keyCode == 13) {
       document.getElementById("details").classList.add("details_anim");
-      if (cmd_prmpt === "personal_info") {
+      if (cmd_prmpt === "info") {
         document.getElementById("details").innerHTML += personal_information;
         document.getElementById("details").style.color = "white";
         document.getElementById("cmd_prmpt").value = "";

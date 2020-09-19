@@ -88,9 +88,7 @@ a {
   bottom: 0;
   overflow: auto;
 }
-input,
-input:hover,
-input:active {
+input {
   background-color: #1b1c1d;
   border-width: 0px;
 }

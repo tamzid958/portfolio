@@ -1,0 +1,181 @@
+* {
+  font-family: Consolas, monaco, monospace;
+  font-size: medium;
+}
+.div-dit {
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.div-dit::-webkit-scrollbar {
+  overflow-y: scroll;
+  display: none;
+}
+
+body {
+  background: #24262d;
+}
+a {
+  color: black;
+}
+.cmd_link,
+.cmd_link:hover,
+.cmd_link:active {
+  color: aquamarine;
+}
+.terminal-window {
+  text-align: left;
+  min-height: 600px;
+  border-radius: 10px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.cmd_social {
+  text-decoration: none;
+  color: white;
+}
+.terminal-window header {
+  background: #e0e8f0;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+}
+.cv_btn {
+  color: black;
+  background-color: white;
+}
+.terminal-window header .button {
+  width: 12px;
+  height: 12px;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+  border-radius: 8px;
+}
+.head-port {
+  display: inline-block;
+  margin-left: 30%;
+}
+@media only screen and (max-width: 600px) {
+  .head-port {
+    margin-left: 5%;
+  }
+}
+
+.terminal-window header .button.green {
+  background: #3bb662;
+}
+
+.terminal-window header .button.yellow {
+  background: #e5c30f;
+}
+
+.terminal-window header .button.red {
+  background: #e75448;
+}
+
+.terminal-window section.terminal {
+  color: white;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+  font-size: 11pt;
+  background: #1b1c1d;
+  box-shadow: 0px -0px 0px #171819, -20px 20px 60px #1f2021;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  bottom: 0;
+  overflow: auto;
+}
+input {
+  background-color: #1b1c1d;
+  border-width: 0px;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+.terminal-window section.terminal .typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.terminal-data {
+  display: none;
+}
+.terminal-window .gray {
+  color: gray;
+}
+.terminal-window .green {
+  color: green;
+}
+.details_anim {
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}

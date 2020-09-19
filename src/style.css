@@ -88,9 +88,12 @@ a {
   bottom: 0;
   overflow: auto;
 }
-input {
-  background-color: #1b1c1d;
+input[type="text"] {
+  background-color: transparent;
   border-width: 0px;
+}
+input[type="text"]:focus {
+  outline: none;
 }
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */

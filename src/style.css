@@ -96,6 +96,7 @@ a {
   overflow: auto;
 }
 canvas {
+  opacity: 25%;
   position: absolute;
 }
 input[type="text"] {

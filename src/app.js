@@ -42,8 +42,5 @@ $(document).ready(function () {
         document.getElementById("cmd_prmpt").value = "";
       }
     }
-    setTimeout(function () {
-      document.getElementById("details").classList.remove("details_anim");
-    }, 4000);
   });
 });

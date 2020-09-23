@@ -14,6 +14,7 @@ $(document).ready(function () {
   $("#cmd_prmpt").on("keypress", function (e) {
     document.getElementById("details").classList.remove("details_anim");
     var cmd_prmpt = $("#cmd_prmpt").val();
+    cmd_prmpt = cmd_prmpt.toLowerCase();
     var error =
       "<br>" +
       cmd_prmpt +

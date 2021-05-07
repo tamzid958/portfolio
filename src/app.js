@@ -25,7 +25,7 @@ cmd.addEventListener("keypress", function (e) {
 });
 
 function loadfile(file){
-  var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+  var xhr = new XMLHttpRequest();
       xhr.open('get', file, true);
       xhr.onreadystatechange = function() {
           if (xhr.readyState == 4 && xhr.status == 200) { 

@@ -1,3 +1,5 @@
+"use-strict";
+
 const details = document.getElementById("details");
 const cmd = document.getElementById("cmd_prmpt");
 cmd.addEventListener("keypress", function (e) {
@@ -9,17 +11,17 @@ cmd.addEventListener("keypress", function (e) {
     if(!isEmpty(cmd_prmpt) && !isBlank(cmd_prmpt))
     {
       if (cmd_prmpt === "info") {
-        loadfile("info.html")    
+        loadfile("sections/info.html")    
       } else if (cmd_prmpt === "skills") {
-        loadfile("skills.html")
+        loadfile("sections/skills.html")
       } else if (cmd_prmpt === "projects") {
-        loadfile("projects.html")
+        loadfile("sections/projects.html")
       }else if (cmd_prmpt === "about") {
-        loadfile("about.html")
+        loadfile("sections/about.html")
       }else if (cmd_prmpt === "education") {
-        loadfile("education.html")
+        loadfile("sections/education.html")
       }else if (cmd_prmpt === "achievements") {
-        loadfile("achievements.html")
+        loadfile("sections/achievements.html")
       } else if (cmd_prmpt === "clear") {
         details.innerHTML = "";
       } else {

@@ -4,6 +4,7 @@ cmd.addEventListener("keypress", function (e) {
   var cmd_prmpt = cmd.value;
   const error =  "<span class='error'>" + cmd_prmpt + " not found, try command: info, about, skills, projects, education, achievements or clear</span>";
   cmd_prmpt = cmd_prmpt.toLowerCase();
+  cmd_prmpt = cmd_prmpt.trim();
   if (e.key === 'Enter') {
     if(!isEmpty(cmd_prmpt) && !isBlank(cmd_prmpt))
     {

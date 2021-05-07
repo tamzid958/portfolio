@@ -25,10 +25,11 @@ body {
 a {
   color: black;
 }
-.cmd_link,
-.cmd_link:hover,
-.cmd_link:active {
-  color: aquamarine;
+a,
+a:hover,
+a:active {
+  color:#e75448;
+  text-decoration: none;
 }
 .terminal-window {
   text-align: left;
@@ -192,4 +193,7 @@ input[type="text"]:focus {
   50% {
     border-color: orange;
   }
+}
+.error {
+  color: red;
 }

@@ -1,30 +1,29 @@
 const details = document.getElementById("details");
 const cmd = document.getElementById("cmd_prmpt");
 cmd.addEventListener("keypress", function (e) {
-  details.classList.remove("details_anim");
   var cmd_prmpt = cmd.value;
+  const error =  "<span class='error'>" + cmd_prmpt + " not found, try command: info, about, skills, projects, education, achievements or clear</span>";
   cmd_prmpt = cmd_prmpt.toLowerCase();
-  var error = "<span class='error'>" + cmd_prmpt + " not found, try command: info, about, skills, projects, education, achievements or clear</span>";
-
   if (e.key === 'Enter') {
-    details.classList.add("details_anim");
-    if (cmd_prmpt === "info") {
-      loadfile("info.html")    
-    } else if (cmd_prmpt === "skills") {
-      loadfile("skills.html")
-    } else if (cmd_prmpt === "projects") {
-      loadfile("projects.html")
-    }else if (cmd_prmpt === "about") {
-      loadfile("about.html")
-    }else if (cmd_prmpt === "education") {
-      loadfile("education.html")
-    }else if (cmd_prmpt === "achievements") {
-      loadfile("achievements.html")
-    } else if (cmd_prmpt === "clear") {
-      details.innerHTML = "";
-      cmd.value = "";
-    } else {
-      details.innerHTML = error;
+    if(!isEmpty(cmd_prmpt) && !isBlank(cmd_prmpt))
+    {
+      if (cmd_prmpt === "info") {
+        loadfile("info.html")    
+      } else if (cmd_prmpt === "skills") {
+        loadfile("skills.html")
+      } else if (cmd_prmpt === "projects") {
+        loadfile("projects.html")
+      }else if (cmd_prmpt === "about") {
+        loadfile("about.html")
+      }else if (cmd_prmpt === "education") {
+        loadfile("education.html")
+      }else if (cmd_prmpt === "achievements") {
+        loadfile("achievements.html")
+      } else if (cmd_prmpt === "clear") {
+        details.innerHTML = "";
+      } else {
+        details.innerHTML = error;
+      }
       cmd.value = "";
     }
   }
@@ -36,8 +35,15 @@ function loadfile(file){
       xhr.onreadystatechange = function() {
           if (xhr.readyState == 4 && xhr.status == 200) { 
             details.innerHTML = xhr.responseText;
-            cmd.value = "";
           } 
       }
       xhr.send();
+}
+
+function isEmpty(str) {
+  return (!str || str.length === 0 );
+}
+
+function isBlank(str) {
+  return (!str || /^\s*$/.test(str));
 }

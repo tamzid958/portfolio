@@ -46,14 +46,14 @@ a:active {
   margin-top: 100px;
 }
 
-.terminal-window header {
+.terminal-window-header {
   background: #e0e8f0;
   height: 50px;
   border-radius: 8px 8px 0 0;
   padding-left: 10px;
 }
 
-.terminal-window header .button {
+.button {
   width: 12px;
   height: 12px;
   margin: 10px 4px 0 0;
@@ -66,19 +66,19 @@ a:active {
   margin-top: -10px;
 }
 
-.terminal-window header .button.green {
+.button.green {
   background: #3bb662;
 }
 
-.terminal-window header .button.yellow {
+.button.yellow {
   background: #e5c30f;
 }
 
-.terminal-window header .button.red {
+.button.red {
   background: #e75448;
 }
 
-.terminal-window section.terminal {
+.terminal {
   color: white;
   font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
   font-size: 11pt;
@@ -109,28 +109,7 @@ a:active {
 .terminal-window .green {
   color: green;
 }
-.details_anim {
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
 .error {
   color: red;
 }

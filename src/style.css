@@ -93,7 +93,7 @@ a:active {
   overflow: auto;
 }
 
-input[type="text"], input[type="text"]:focus  {
+#cmd_prmpt, #cmd_prmpt:focus  {
   background-color: transparent;
   border-width: 0px;
   color: white;

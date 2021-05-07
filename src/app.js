@@ -14,6 +14,12 @@ cmd.addEventListener("keypress", function (e) {
       loadfile("skills.html")
     } else if (cmd_prmpt === "projects") {
       loadfile("projects.html")
+    }else if (cmd_prmpt === "about") {
+      loadfile("about.html")
+    }else if (cmd_prmpt === "education") {
+      loadfile("education.html")
+    }else if (cmd_prmpt === "achievements") {
+      loadfile("achievements.html")
     } else if (cmd_prmpt === "clear") {
       details.innerHTML = "";
       cmd.value = "";

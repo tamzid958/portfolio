@@ -1,5 +1,5 @@
 * {
-  font-family: Consolas, monaco, monospace;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
   font-size: medium;
   overflow-y: scroll;
   -ms-overflow-style: none; 
@@ -39,7 +39,7 @@ a:active {
 }
 .terminal-window {
   text-align: left;
-  min-height: 600px;
+  min-height: 500px;
   border-radius: 10px;
   position: relative;
   margin: 0 auto;
@@ -60,6 +60,7 @@ a:active {
   display: inline-block;
   border-radius: 8px;
 }
+
 .head-port {
   display: inline-block;
   margin-left: 30%;
@@ -80,7 +81,6 @@ a:active {
 
 .terminal {
   color: white;
-  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
   font-size: 11pt;
   background: #1b1c1d;
   box-shadow: 0px -0px 0px #171819, -20px 20px 60px #1f2021;
@@ -100,21 +100,8 @@ a:active {
   outline: none;
 }
 
-.terminal-data {
-  display: none;
-}
-.terminal-window .gray {
-  color: gray;
-}
-.terminal-window .green {
-  color: green;
-}
-
 .error {
   color: red;
-}
-.text-decoration-none{
-  text-decoration: none;
 }
 
 @media (max-width: 600px) {
